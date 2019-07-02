@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 2.2;
+}
+p {
+  text-align: center;
+}
+.showcase {
+  background: url(images/image_5.jpg) center center/cover;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+.uppur {
+  margin: 20px 0px;
+  width: 310px;
+}
+
+.budget {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.8;
+}
+
+.income,
+.expences {
+  display: flex;
+  padding: 3px 20px;
+  text-transform: uppercase;
+  align-items: center;
+}
+.head {
+  flex-basis: 65%;
+}
+
+.income {
+  background: #28b9b5;
+  margin-bottom: 12px;
+}
+.expences {
+  background: #ff5049;
+}
+
+.head {
+  font-size: 13px;
+
+  color: black;
+}
+.percentage {
+  margin-left: 10px;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 1.8;
+  text-align: center;
+  border-radius: 5px;
+  width: 32px;
+}
+.container {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.inputForm {
+  background: #f4f4f4;
+  padding: 15px;
+}
+.sign {
+  width: 55px;
+  height: 44px;
+  font-size: 18px;
+  margin-right: 10px;
+  border: 1px solid #e7e7e7;
+  transition: border 0.3s;
+  outline-color: red;
+}
+
+.description,
+.value {
+  border: 1px solid #e7e7e7;
+  font-size: 14px;
+  padding: 12px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: border 0.3s;
+  outline-color: red;
+}
+.description {
+  width: 400px;
+}
+
+.value {
+  width: 100px;
+}
+.inputContainer button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: #28b9b5;
+  vertical-align: middle;
+  margin-left: 10px;
+  line-height: 1.1;
+  cursor: pointer;
+}
+button:active {
+  position: relative;
+  top: 2px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.item {
+  list-style: none;
+}
+.incomePart {
+  width: 475px;
+  margin-right: 50px;
+}
+.expencesPart {
+  width: 475px;
+}
+.bottom .heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.heading {
+  margin-top: 20px;
+}
+li {
+  display: flex;
+  transition: transform 1s;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+li:first-child {
+  border-top: 1px solid #e7e7e7;
+}
+li:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.incomeItem .itemName,
+.expencesItem .itemName {
+  flex-basis: 60%;
+}
+
+.incomePart h1,
+.incomeItem .itemName,
+.incomeItem .itemValue,
+.removeIncome {
+  color: #28b9b5;
+}
+.itemValue {
+  transition: transform 0.3s;
+}
+.expencesPart h1,
+.expencesItem .itemName,
+.expencesItem .itemValue,
+.expencesItem .removeExpences {
+  color: #ff5049;
+}
+
+.remove {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #28b9b5;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  display: none;
+  transform: translateX(-5px);
+}
+.removeExpences {
+  transform: translateX(-20px);
+}
+.itemPercentage {
+  color: #ff5049;
+  margin-left: 10px;
+  font-size: 10px;
+  background: pink;
+  line-height: 1.8;
+  text-align: center;
+  border-radius: 5px;
+  width: 32px;
+  align-self: center;
+  margin-right: 20px;
+  transition: transform 0.3s;
+}
+
+li:hover .itemValue {
+  transform: translateX(-30px);
+}
+li:hover .remove {
+  display: block;
+}
+li:hover .itemPercentage {
+  transform: translateX(-30px);
+}
+
+.description:focus {
+  border-color: #28b9b5;
+}
+.value:focus {
+  border-color: #28b9b5;
+}
+.red{
+  color:#ff5049 !important;
+  
+}
+.red_focus{
+  border: 1px solid  #ff5049 !important;
+}

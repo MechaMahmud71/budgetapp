@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Budgetly</title>
+  </head>
+  <body>
+    <div class="showcase">
+      <div class="container">
+        <div class="uppur">
+          <p>Avialable Budget in <span class="month">September</span><span class="year"> 2018:</span></p>
+          <p class="budget">+3002.58</p>
+          <div class="income">
+            <span class="head incomehead">income</span>
+            <span class="incomeNumber">+ 4000</span>
+          </div>
+          <div class="expences">
+            <span class="head expenceshead">expences</span>
+            <span class="expencesNumber">- 1000</span>
+            <span class="percentage">0.2%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inputForm">
+      <div class="container">
+        <div class="inputContainer">
+          <select class="sign">
+            <option class="green" value="inc">+</option>
+            <option class="red" value="exp">-</option>
+          </select>
+          <input class="description" name="Description" type="text" placeholder="Add description">
+          <input class="value" name="value" type="number" placeholder="value">
+          <button class="check" type="submit">
+            <i class="fas fa-check-circle"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="bottom">
+        <div class="incomePart">
+          <h1 class="heading incomeHeading">Income</h1>
+          <ul class="incomeList">
+            <!-- <li class="item incomeItem">
+                        <span class="itemName">Website project</span>
+                        <span class="itemValue">+2500.00</span>
+                        <button class="remove removeIncome" type="submit"><i class="fas fa-times-circle"></i></button>
+                    </li>
+                    <li class="item incomeItem">
+                        <span class="itemName">Sold car</span>
+                        <span class="itemValue">+1500.00</span>
+                        <button class="remove removeIncome" type="submit"><i class="fas fa-times-circle"></i></button>
+                    </li> -->
+          </ul>
+        </div>
+
+        <div class="expencesPart">
+          <h1 class="heading expencesHeading">Expences</h1>
+          <ul class="expencesList">
+            <!-- <li class="item expencesItem"> 
+                       <span class="itemName">Website project</span>
+                        <span class="itemValue">500.00</span>
+                        <span class="itemPercentage">25%</span>
+                        <button class="remove removeExpences" type="submit"><i class="fas fa-times-circle"></i></button>
+                    </li>
+                    <li class="item expencesItem">
+                        <span class="itemName">Sold car</span>
+                        <span class="itemValue">100.00</span>
+                        <span class="itemPercentage">25%</span>
+                        <button class="remove removeExpences" type="submit"><i class="fas fa-times-circle"></i></button>
+                    </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
